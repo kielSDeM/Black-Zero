@@ -1,9 +1,10 @@
 Nmap
-
+nikto: nikto -h 10.0.0.48
+dirbuster: used to brutefroce search directories for files.
 wpscan
 
 burpsuite
-
+crackstation.net: This website is for cracking hashes without using hashcat.
 
 
 Hydra:
