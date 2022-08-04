@@ -2,6 +2,7 @@ Nmap
 netdiscover
 nikto: nikto -h 10.0.0.48
 dirbuster: used to brutefroce search directories for files.
+wget for downloading files.
 wpscan
 
 burpsuite
