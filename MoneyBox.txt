@@ -1,4 +1,4 @@
 nmap
 filezilla
 dirb
-steghide
+steghide: steghide --extract -sf trytofind.jpg
