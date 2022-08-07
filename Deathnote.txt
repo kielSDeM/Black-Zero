@@ -1,0 +1,3 @@
+nmap -sP -sV 
+nc -mv 10.0.0.68:80
+vi /etc/host
