@@ -1,0 +1,6 @@
+Used nmap to find IP and open ports.
+Then used nikto to scan for vulnerabilites 
+sqlmap to do sqlinjections and find a user&password list
+then I gained access to linux master after using a decoder.
+to gain root privledges I created a soft link using the command ln -s /bin/vi tail.
+Was able to login as root from there.
