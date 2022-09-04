@@ -1,0 +1,1 @@
+NetCat 4.1 Strategy: Create listener on vm; ssh into the vm; cp the binary; use netcat on the vm and open up a reverse shell on the listeners port; and then execute the binary.
