@@ -1,1 +1,2 @@
-Get-Service adws, kdc,
+Verifys that the domain controller was set up:
+Get-Service adws, kdc,netlogon,dns
