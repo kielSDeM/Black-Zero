@@ -1,0 +1,7 @@
+sudo nmap -v -T4 -A -p- -oN nmap.log 192.168.19.131
+
+gobuster dir \
+-u http://192.168.87.104/seeddms51x \
+-w /usr/share/wordlists/rockyou.txt \
+-edrf \
+-x php,html,cgi
