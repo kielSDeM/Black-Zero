@@ -1,1 +1,2 @@
 cat myfile.txt | tr -d '\n' > oneline.txt
+http://10.0.0.76/index.php?drip=/etc/dripispowerful.html
