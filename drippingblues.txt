@@ -1,0 +1,1 @@
+cat myfile.txt | tr -d '\n' > oneline.txt
