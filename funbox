@@ -1,2 +1,3 @@
+nmap -sV -sP 10.0.0.12/24
 nmap -p21 -sV 10.0.0.15
 https://www.rapid7.com/db/modules/exploit/unix/ftp/proftpd_133c_backdoor/
