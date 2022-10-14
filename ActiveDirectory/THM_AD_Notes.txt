@@ -10,4 +10,7 @@ Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host -AsSecureString -Pro
 #Used to force the new user to create a new password on the next login.
 Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose
 
+#force GPO update
+gpupdate /force
+
 
