@@ -1,0 +1,1 @@
+nmap -sV --script vuln 10.10.75.170
