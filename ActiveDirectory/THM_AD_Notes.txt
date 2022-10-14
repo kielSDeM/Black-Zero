@@ -1,3 +1,6 @@
+# used for connecting to RDP.
+rdesktop -u sophie -p Super1234 10.10.108.164
+
 #Verifys that the domain controller was set up:
 Get-Service adws, kdc,netlogon,dns
 
