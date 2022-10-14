@@ -1,2 +1,10 @@
-Verifys that the domain controller was set up:
+#Verifys that the domain controller was set up:
 Get-Service adws, kdc,netlogon,dns
+
+#Used to reset the password of a newly created account.
+Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose
+
+#Used to force the new user to create a new password on the next login.
+Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose
+
+
