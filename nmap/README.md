@@ -12,8 +12,8 @@ nmap -sV 10.0.0.21
 scans all ports on a network
 ```
 nmap -sV -sP 10.0.0.15/24 -p-
-```    
-
+```  
+scans SYN packages on a network
 ```
 nmap -sS -p- 10.0.0.21
 ```
