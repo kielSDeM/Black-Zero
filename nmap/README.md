@@ -17,3 +17,7 @@ scans SYN packages on a network
 ```
 nmap -sS -p- 10.0.0.21
 ```
+command used to find vulnerabilities
+```
+nmap -sV --script vuln 10.10.75.170
+```
