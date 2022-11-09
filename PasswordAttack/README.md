@@ -31,6 +31,20 @@ echo "e48e13207341b6bffb7fb1622282247b" > hash2.txt
  hashcat -a 3 hash2.txt ?d?d?d?d
 ```
 # Rule-Based Attack
+Shows john the ripper rules.
 ```
 cat /etc/john/john.conf|grep "List.Rules:" | cut -d"." -f3 | cut -d":" -f2 | cut -d"]" -f1 | awk NF
+```
+Creates a wordlist with John the Ripper
+
+```
+john --wordlist=/tmp/single-password-list.txt --rules=best64 --stdout | wc -l
+```
+Custom Rules
+```
+sudo vi /etc/john/john.conf
+
+echo "password" > /tmp/single.lst
+
+john --wordlist=/tmp/single.lst --rules=THM-Password-Attacks --stdout
 ```
