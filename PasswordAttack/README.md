@@ -24,3 +24,9 @@ git clone https://github.com/Mebus/cupp.git
 ```
 hashcat -a 0 -m 0 f806fc5a2a0d5ba2471600758452799c /usr/share/wordlists/rockyou.txt
 ```
+Crack md5 hash
+```
+echo "e48e13207341b6bffb7fb1622282247b" > hash2.txt 
+
+ hashcat -a 3 hash2.txt ?d?d?d?d
+```
