@@ -30,3 +30,7 @@ echo "e48e13207341b6bffb7fb1622282247b" > hash2.txt
 
  hashcat -a 3 hash2.txt ?d?d?d?d
 ```
+# Rule-Based Attack
+```
+cat /etc/john/john.conf|grep "List.Rules:" | cut -d"." -f3 | cut -d":" -f2 | cut -d"]" -f1 | awk NF
+```
