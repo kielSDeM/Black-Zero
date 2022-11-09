@@ -19,3 +19,8 @@ Automatic interactive trool written in Python for creating custom wordlists.
 ```
 git clone https://github.com/Mebus/cupp.git
 ```
+# Offline Dictionary Atack
+
+```
+hashcat -a 0 -m 0 f806fc5a2a0d5ba2471600758452799c /usr/share/wordlists/rockyou.txt
+```
