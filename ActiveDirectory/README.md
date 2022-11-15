@@ -84,3 +84,15 @@ Tests inbound connections
 ```
 Test-NetConnection -ComputerName 127.0.0.1 -Port 80
 ```
+# Sysmon Commands
+
+Command to find Sysmon
+
+```
+Get-Process | Where-Object { $_.ProcessName -eq "Sysmon" }
+```
+or
+```
+reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Sysmon/Operational
+```
+
