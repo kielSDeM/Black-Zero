@@ -76,7 +76,11 @@ Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
 ```
 Get-NetFirewallProfile | Format-Table Name, Enabled
 ```
-Check curretn firewall  rules
+Check current firewall  rules
 ```
 Get-NetFirewallRule | select DisplayName, Enabled, Description
+```
+Tests inbound connections
+```
+Test-NetConnection -ComputerName 127.0.0.1 -Port 80
 ```
