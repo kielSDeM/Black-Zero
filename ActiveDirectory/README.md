@@ -9,7 +9,7 @@ Account Operators	Can manage users that are not in privileged groups
 
 # Domain and User Enumeration
 
-List accounts wiht administrative access to the current machine
+List accounts with administrative access to the current machine
 ```
 net localgroup administrators
 ```
@@ -56,4 +56,9 @@ net user <USERNAME> /ACTIVE:YES /domain
 Change domain user password
 ```
 net user <USERNAME> "<PASSWORD>" /domain
+```
+# AV Enumeration
+
+```
+Get-Service WinDefend
 ```
