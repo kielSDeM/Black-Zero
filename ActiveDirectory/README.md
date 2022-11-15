@@ -59,6 +59,21 @@ net user <USERNAME> "<PASSWORD>" /domain
 ```
 # AV Enumeration
 
+Command to tell if Windows Defender is Enabled
 ```
 Get-Service WinDefend
 ```
+Command that tells what Firewall profiles are active
+```
+Get-NetFirewallProfile | Format-Table Name, Enabled
+```
+AdminPriv* Command to disable one or more firewall profile 
+
+```
+Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
+```
+
+```
+Get-NetFirewallProfile | Format-Table Name, Enabled
+```
+
