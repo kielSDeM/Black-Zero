@@ -76,4 +76,7 @@ Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
 ```
 Get-NetFirewallProfile | Format-Table Name, Enabled
 ```
-
+Check curretn firewall  rules
+```
+Get-NetFirewallRule | select DisplayName, Enabled, Description
+```
