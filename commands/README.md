@@ -16,3 +16,18 @@ curl -H 'Host: http://172.16.226.6' "http://172.16.226.6/'"
 ```
 to exploit a cronjob
 https://gtfobins.github.io/gtfobins/tar/
+
+Shows the password hashes on a linux system
+```
+cat /etc/passwd
+```
+Shows the groups on a linux system
+```
+cat /etc/group
+```
+```
+ls -lh /var/mail/
+```
+```
+dpkg -l
+```
