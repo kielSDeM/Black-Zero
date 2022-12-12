@@ -5,5 +5,7 @@ dsget user -email
 
 dsquery user -in "Domain Admins"
 
+This command will show a list of all users in the Active Directory.
+
 dsquery user
 
