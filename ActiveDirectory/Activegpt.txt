@@ -1,0 +1,9 @@
+dsget user -samid telephoneNumber
+
+dsget user -email
+
+
+dsquery user -in "Domain Admins"
+
+dsquery user
+
