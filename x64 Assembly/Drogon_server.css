@@ -1,0 +1,26 @@
+#include <drogon/drogon.h>
+using namespace drogon;
+
+int main() {
+  // Create an HTTP server listening on port 8080
+  HttpSimpleServer server(8080);
+
+  // Set up a route to handle requests to the "/" path
+  server.registerHandler<Get>("/", [](const HttpRequestPtr& req,
+                                      std::function<void (const HttpResponsePtr &)> &&callback) {
+    // Create an HTTP response with a plain-text message
+    auto resp = HttpResponse::newHttpResponse();
+    resp->setBody("Hello, world!");
+
+    // Send the response back to the client
+    callback(resp);
+  });
+
+  // Start the server
+  server.start();
+
+  // Wait for the server to stop
+  server.waitForStop();
+
+  return 0;
+}
