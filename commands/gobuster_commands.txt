@@ -1,3 +1,0 @@
-gobuster dir -u http://driftingblues.box -x php,html,txt --wordlist=/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o dir.log
-
- gobuster vhost  -u driftingblues.box -w /usr/share/wordlists/dirb/common.txt
