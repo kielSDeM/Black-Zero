@@ -17,3 +17,5 @@ I find a directory called
  http://10.10.220.226/retro/
 ```
 and decide to check it out. We found a wordpress log in page when we scroll to the bottom of the page that leads to a wordpress login form.
+We also found some interesting blog post from the user Wade one which talks about how his favorite bood Ready Player One was
+turned into a movie and doing some research on the book we find out about Parzival.
