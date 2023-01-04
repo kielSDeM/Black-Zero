@@ -47,7 +47,7 @@ Since I could use all commands I used the command to give me root access
 ```
 sudo su
 ```
-which then allowed me  to go to cd into the root folder and gaine the root flag
+which then allowed me  to cd into the root folder and gaine the root flag
 
 root flag: 7a62883dd2c457e9b9b6f8f26028a710
 
