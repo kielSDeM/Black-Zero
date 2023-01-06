@@ -4,6 +4,9 @@
 https://github.com/fox-it/BloodHound.py
 ```
 ```
+https://github.com/Hackplayers/evil-winrm
+```
+```
 https://github.com/ropnop/kerbrute
 ```
 ```
