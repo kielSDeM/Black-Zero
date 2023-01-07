@@ -10,3 +10,7 @@ Scans for vulnerable plugins.
  ```
  wpscan --url http://10.10.67.77 --usernames c0ldd --passwords rockyou.txt
  ```
+
+```
+wpscan --url http://10.10.67.77 --enumerate u 
+```
