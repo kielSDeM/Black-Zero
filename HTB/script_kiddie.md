@@ -29,6 +29,6 @@ Using ```sudo -l``` we found that the user had root permissions to use the binar
 going to GTFO bins I found an exploit that allowed me to get root privledges with the commands"
 ```
 sudo msfconsole
-`msf6` > irv
+```msf6 > irv
 ```
 We now have root access to the machine action is no longer required.
