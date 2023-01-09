@@ -14,3 +14,15 @@ Install bloodhound and neo4j
 ```
 apt install bloodhound neo4j
 ```
+We use nmap and enum4linux to enumerate the machine.
+```
+nmap -sV -sC -Pn -T5 10.10.62.43
+```
+```
+enum4linux 10.10.62.43
+```
+Since the port for kerberos was opened we were able to use kerbrute for user enumeration.
+
+```
+./kerbrute userenum --dc 10.10.62.43 -d spookysec.local userlist.txt
+```
