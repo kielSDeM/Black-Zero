@@ -42,3 +42,7 @@ Lists capabilities of binaries
 ```
 getcap -r /
 ```
+Shows user group files
+```
+find / -type f -group users 2>/dev/null
+```
