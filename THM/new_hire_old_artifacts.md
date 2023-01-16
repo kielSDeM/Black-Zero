@@ -20,8 +20,19 @@ The way we answer this is we add another field to the search called ```Company``
 
 answer: ```NirSoft```
 
-Question3:
+Question3 Another suspicious binary running from the same folder was executed on the workstation. What was the name of the binary? What is listed as its original filename? (format: file.xyz,file.xyz):
 
+We do some digging and decide to go with the command output listed below:
 ```
-source="WinEventLog:Microsoft-Windows-Sysmon/Operational"C:\\Users\\FINANC~1\\AppData\\Local\\Temp NOT 11111.exe NOT nw12576_540906275 NOT Rkd6YzHKNCjHb NOT build.exe NOT updatewin.exe NOT *.tmp
+source="WinEventLog:Microsoft-Windows-Sysmon/Operational" C:\\Users\\FINANCE01\\AppData\\Local\\Temp\\ NOT 11111.exe NOT nw12576_540906275 NOT Rkd6YzHKNCjHb NOT build.exe   NOT *.tmp NOT Procmon64 NOT splunk DestinationIp="2.56.59.42"
+```
+We revert back from question 4 and find that the program that is trying to connect to the server is IonicLarger.exe.
+To find the original name I decided to take a step back and enter ```IonicLarger.exe``` as the only search parameter 
+and added the OriginalFilename field to the the selected fields.
+
+By doing this I was able to find out the original filename which was ```PalitExplorer.exe```
+
+Search Parameters: 
+```
+source="WinEventLog:Microsoft-Windows-Sysmon/Operational" IonicLarge.exe OriginalFileName="PalitExplorer.exe" 
 ```
