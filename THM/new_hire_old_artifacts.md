@@ -36,3 +36,5 @@ Search Parameters:
 ```
 source="WinEventLog:Microsoft-Windows-Sysmon/Operational" IonicLarge.exe OriginalFileName="PalitExplorer.exe" 
 ```
+We did question 4 before we three and used the field ```DestinationIp``` to answer the question.
+answer: 2.56.59.42
