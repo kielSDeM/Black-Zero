@@ -38,7 +38,28 @@ source="WinEventLog:Microsoft-Windows-Sysmon/Operational" IonicLarge.exe Origina
 ```
 Question 4: The binary from the previous question made two outbound connections to a malicious IP address. What was the IP address? Enter the answer in a defang format.
 
-We did question 4 before we three and used the field ```DestinationIp``` to answer the question.
+We did question 4 before we did question 3 and used the field ```DestinationIp``` to answer the question.
 answer: 2.56.59.42
+
+Question 5: The same binary made some change to a registry key. What was the key path?
+
+The way we found this question was we used the search params ```IonicLarge.exe HKLM``` and found the answer in the
+first event.
+
+answer: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender
+
+Question 6: Some processes were killed and the associated binaries were deleted. What were the names of the two binaries? (format: file.xyz,file.xyz)
+
+We used the hint from question 6 and used ``` taskkill /im``` as the search parameter and that is how we found the answer.
+
+answer: phcIAmLJMAIMSa9j9MpgJo1m.exe, WvmIOrcfsuILdX6SNwIRmGOJ.exe
+
+Question 7
+
+For question 7 I ran ```powershell``` as the only search parameter and found the answer in the Commandline field at the very bottom.
+
+answer: powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147735503 ThreatIDDefaultAction_Actions=6 Force=True
+
+
 
 
