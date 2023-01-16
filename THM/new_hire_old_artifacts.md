@@ -30,7 +30,9 @@ We revert back from question 4 and find that the program that is trying to conne
 To find the original name I decided to take a step back and enter ```IonicLarger.exe``` as the only search parameter 
 and added the OriginalFilename field to the the selected fields.
 
-By doing this I was able to find out the original filename which was ```PalitExplorer.exe```
+By doing this I was able to find out the original filename.
+
+answer: ```PalitExplorer.exe```
 
 Search Parameters: 
 ```
@@ -46,36 +48,36 @@ Question 5: The same binary made some change to a registry key. What was the key
 The way we found this question was we used the search params ```IonicLarge.exe HKLM``` and found the answer in the
 first event.
 
-answer: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender
+answer: ```HKLM\SOFTWARE\Policies\Microsoft\Windows Defender```
 
 Question 6: Some processes were killed and the associated binaries were deleted. What were the names of the two binaries? (format: file.xyz,file.xyz)
 
 We used the hint from question 6 and used ``` taskkill /im``` as the search parameter and that is how we found the answer.
 
-answer: phcIAmLJMAIMSa9j9MpgJo1m.exe, WvmIOrcfsuILdX6SNwIRmGOJ.exe
+answer: ```phcIAmLJMAIMSa9j9MpgJo1m.exe, WvmIOrcfsuILdX6SNwIRmGOJ.exe```
 
 Question 7
 
 For question 7 I ran ```powershell``` as the only search parameter and found the answer in the Commandline field at the very bottom.
 
-answer: powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147735503 ThreatIDDefaultAction_Actions=6 Force=True
+answer: ```powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147735503 ThreatIDDefaultAction_Actions=6 Force=True```
 
 Question 8: Based on the previous answer, what were the four IDs set by the attacker? Enter the answer in order of execution. (format: 1st,2nd,3rd,4th)
 
 From the same search as question 7 we once again went to the commandline field and found the answers there.
 
-answer: 2147735503, 2147737007, 2147737010, 2147737394 
+answer: ```2147735503, 2147737007, 2147737010, 2147737394```
 
 Question 9: Another malicious binary was executed on the infected workstation from another AppData location. What was the full path to the binary?
 For this one we just used ```AppData``` as the search parameter and found it as one of the first results.
 
-answer: C:\Users\Finance01\AppData\Roaming\EasyCalc\EasyCalc.exe
+answer: ```C:\Users\Finance01\AppData\Roaming\EasyCalc\EasyCalc.exe```
 
 Question 10: What were the DLLs that were loaded from the binary from the previous question? Enter the answers in alphabetical order. (format: file1.dll,file2.dll,file3.dll)
 
 For this we use ```EasyCalc``` as the search parameter and then use the ```OriginalFileName``` field to answer the question.
 
-answer: ffmpeg.dll, nw.dll,  nw_elf.dll
+answer: ```ffmpeg.dll, nw.dll,  nw_elf.dll```
 
 Congratulations for Completing this room!!! The last answer is autocompleted for you and I hope that you enjoyed my walkthrough!
 
