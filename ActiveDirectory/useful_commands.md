@@ -95,4 +95,7 @@ or
 ```
 reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Sysmon/Operational
 ```
-
+Turn off windows firewall
+```
+sc config WinDefend start= disabled
+```
