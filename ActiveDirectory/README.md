@@ -24,3 +24,7 @@ curl https://raw.githubusercontent.com/fortra/impacket/master/examples/psexec.py
 ```
 curl https://raw.githubusercontent.com/fortra/impacket/master/examples/secretsdump.py > secretsdump.py
 ```
+a dump command for LAP.
+```
+get-adcomputer -filter * -properties ms-mcs-admpwd | select name,ms-mcs-admpwd
+```
