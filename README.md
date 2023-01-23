@@ -13,3 +13,8 @@ USeful website for active directory
 ```
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md#tools
 ```
+For shellshocker attacks:
+
+```
+https://github.com/opsxcq/exploit-CVE-2014-6271
+```
