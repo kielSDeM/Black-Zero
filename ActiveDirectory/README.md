@@ -28,3 +28,6 @@ a dump command for LAP.
 ```
 get-adcomputer -filter * -properties ms-mcs-admpwd | select name,ms-mcs-admpwd
 ```
+```
+https://github.com/fox-it/BloodHound.py
+```
