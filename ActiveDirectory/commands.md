@@ -22,3 +22,7 @@ used to find winrm access.
 ```
 crackmapexec winrm 192.168.219.122 -u fmcsorely -p CrabSharkJellyfish192
 ```
+used to find the shares on a file system.
+```
+crackmapexec smb 192.168.105.122 -u fmcsorley -p CrabSharkJellyfish192 --shares
+```
