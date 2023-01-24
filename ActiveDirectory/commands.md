@@ -18,3 +18,7 @@ used to crack found passwords or users.
 ```
 crackmapexec smb 192.168.105.122 -u users.txt -p CrabSharkJellyfish192 --continue-on-success
 ```
+used to find winrm access.
+```
+crackmapexec winrm 192.168.219.122 -u fmcsorely -p CrabSharkJellyfish192
+```
