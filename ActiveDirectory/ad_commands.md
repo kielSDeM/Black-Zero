@@ -4,8 +4,13 @@ responder -I tun0 -wv
 ```
 Powershell commands:
 
+Download files from a url
 ```
 Invoke-WebRequest -Uri <ip address> -Outfile <filename>
+```
+Checks to see who has gmsa permissions on an AD:
+```
+Get-ADServiceAccount -Filter * | where-object {$_.ObjectClass -eq "msDS-GroupManagedServiceAccount"}
 ```
 
 known manual start permissions on windows:
