@@ -23,3 +23,7 @@ How to use bloodhound
 ```
 https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/abusing-active-directory-with-bloodhound-on-kali-linux
 ```
+PEAS:
+```
+https://github.com/carlospolop/PEASS-ng
+```
