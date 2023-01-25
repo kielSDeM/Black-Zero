@@ -31,3 +31,6 @@ Useful tools for Windows privesc:
 ```
 https://github.com/expl0itabl3/Toolies
 ```
+```
+https://github.com/gtworek/Priv2Admin
+```
