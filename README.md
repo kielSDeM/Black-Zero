@@ -27,3 +27,7 @@ PEAS:
 ```
 https://github.com/carlospolop/PEASS-ng
 ```
+Useful tools for Windows privesc:
+```
+https://github.com/expl0itabl3/Toolies
+```
