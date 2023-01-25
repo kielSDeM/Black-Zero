@@ -60,3 +60,7 @@ ps -aux
 
 netstat -an
 ```
+To escape rbash:
+```
+ssh mindy@10.10.10.51 -t bash
+```
