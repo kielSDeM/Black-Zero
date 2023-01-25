@@ -34,3 +34,7 @@ https://github.com/expl0itabl3/Toolies
 ```
 https://github.com/gtworek/Priv2Admin
 ```
+tool used for exploiting windows.
+```
+https://github.com/xct/SeRestoreAbuse
+```
