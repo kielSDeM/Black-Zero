@@ -38,3 +38,21 @@ tool used for exploiting windows.
 ```
 https://github.com/xct/SeRestoreAbuse
 ```
+Active Directory Cheat Sheet:
+```
+https://pentest.coffee/active-directory-cheat-sheet-94e0bb9bed2
+```
+Mimikatz guide:
+```
+https://book.hacktricks.xyz/windows-hardening/stealing-windows-credentials/credentials-mimikatz
+```
+
+Cheat Sheet:
+```
+https://wadcoms.github.io/
+```
+LocalFileInclusion:
+
+```
+https://medium.com/@prince0f4llsaiyanz/lfi-local-file-inclusion-and-log-poisoning-745dcd0fbe13
+```
