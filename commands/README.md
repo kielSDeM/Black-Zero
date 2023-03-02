@@ -71,3 +71,6 @@ ssh mindy@10.10.10.51 -t bash
 ```
 nmap --script smb-vuln* -p 445 10.10.10.4
 ```
+```
+ls /usr/share/nmap/scripts/ | grep smb | grep vuln
+```
