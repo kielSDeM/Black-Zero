@@ -56,3 +56,7 @@ LocalFileInclusion:
 ```
 https://medium.com/@prince0f4llsaiyanz/lfi-local-file-inclusion-and-log-poisoning-745dcd0fbe13
 ```
+LFI files:
+```
+https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/file_inclusion_windows.txt
+```
