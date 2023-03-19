@@ -20,3 +20,7 @@ dump secrets in a meterpreter session.
 ```
 lsa_dump_secrets
 ```
+searches for the local exploit suggestor
+```
+search local_exploit_suggester
+```
