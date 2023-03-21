@@ -24,3 +24,7 @@ searches for the local exploit suggestor
 ```
 search local_exploit_suggester
 ```
+suggests exploits to use against a meterpreter session.
+```
+use multi/recon/local_exploit_suggester
+```
