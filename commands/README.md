@@ -97,3 +97,7 @@ Used to help find files in the file share:
 ```
 find /usr/share/ -name zap.sh
 ```
+
+```
+docker run -dit --restart unless-stopped -d -p 8000:8000 -e SPLUNK_START_ARGS='--accept-license' -e SPLUNK_PASSWORD='Super1234' splunk/splunk:latest
+```
