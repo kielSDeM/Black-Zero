@@ -104,3 +104,6 @@ docker run -dit --restart unless-stopped -d -p 8000:8000 -e SPLUNK_START_ARGS='-
 ```
 cat /etc/crontab
 ```
+```
+find / -user elyana -type f 2>&1 | grep -v "Permission" | grep -v "No such"
+```
