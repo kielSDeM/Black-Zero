@@ -42,6 +42,10 @@ find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null
 ```
  find / -perm /4000 -type f -exec ls -ld {} \; 2>/dev/null
 ```
+find a file on a system
+```
+find / -type f -name user.txt 2>/dev/null
+```
 ```
 getcap -r / 2>/dev/null
 ```
