@@ -1,3 +1,5 @@
+```lxd init```
+
 ```
 lxc image import ./apline-v3.10-x86_64-20191008_1227.tar.gz --alias myimage
 lxc init myimage ignite -c security.privileged=true
