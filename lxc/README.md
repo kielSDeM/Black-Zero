@@ -4,6 +4,7 @@ cd lxd-alpine-builder
 sudo bash build-alpine
 ```
 ```python -m http.server --bind=0.0.0.0```
+
 ```wget  http://0.0.0.0/{alpine-image}```
 
 ```lxd init```
