@@ -111,3 +111,8 @@ cat /etc/crontab
 ```
 find / -user elyana -type f 2>&1 | grep -v "Permission" | grep -v "No such"
 ```
+
+Edit sudoer files for sudo priveledges.
+```
+zero ALL=(ALL)       ALL
+```
