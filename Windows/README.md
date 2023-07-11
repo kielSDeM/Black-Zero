@@ -7,8 +7,10 @@ xfreerdp /v:10.10.29.125 /u:thm-unpriv /p:Password321 +clipboard
 
 #### Evil-WinRm
 ```
+#connect to system with eveil-winrm
 evil-winrm -i 10.10.10.175 -u svc_loanmgr -p 'Moneymakestheworldgoround!'
 
+#command to upload files through win-rm
 upload ~/windows_programs/winPEASany.exe
 ```
 
