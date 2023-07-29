@@ -6,3 +6,4 @@ Aftwards we enumerate port 80 with gobuster and find a cgi-bin directory and a p
 ```
 gobuster dir -u "http://10.0.0.58/" -w /usr/share/wordlists/dirb/common.txt -x php,html,aspx,bak,txt,sh
 ```
+We also enumerate port 9090 and find a flag on the front page ```FLAG {There is no Zeus, in your face!}```
