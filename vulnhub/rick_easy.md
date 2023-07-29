@@ -1,4 +1,7 @@
 We start to enumerate with an Nmap scan.
+```
+nmap -sV -sC -vv -T4 10.0.0.58  -p-
+```
 
 We find ftp on port 21 which allows anonymous access and we find the first flag ``` FLAG{Whoa this is unexpected}  ```
 
