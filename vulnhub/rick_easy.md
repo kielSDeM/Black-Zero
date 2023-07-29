@@ -25,7 +25,11 @@ We then download a jpeg file and a zip file and use ```Strings``` to find a pass
 
 After we copy the safe binary to the /tmp folder and chmod +x it. We then run it with the password to get our next flag: ```FLAG{And Awwwaaaaayyyy we Go!}```
 
-Using a program called mp64 we create list with the clues given to us in the binary and then gain acces to ricks account via ssh and from their we gain root access with sudo su and get the final flag: ``` FLAG: {Ionic Defibrillator}```.
+Using a program called mp64 we create list with the clues given to us in the binary to create a wordlist with hydra:
+```
+hydra -l RickSanchez -P pass.txt -u 10.0.0.58 ssh -s 22222 -t 4
+```
+And then gain acces to ricks account via ssh and from their we gain root access with sudo su and get the final flag: ``` FLAG: {Ionic Defibrillator}```.
 
 System has been rooted action is no longer required.
 
