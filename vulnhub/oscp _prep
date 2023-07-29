@@ -1,0 +1,12 @@
+We start to enumerate the machine with an nmap scan: 
+```
+nmap -sV -sC -T4 -vv 10.0.0.20
+```
+ports 80 & 22 are open. 
+
+We visit the website and find out that it is a wordpress website and begin to use wpscan"
+```
+wpscan --url http://10.0.0.20/ 
+
+wpscan --url http://10.0.0.20/ -e u 
+```
