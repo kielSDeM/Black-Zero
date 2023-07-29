@@ -9,3 +9,7 @@ gobuster dir -u "http://10.0.0.58/" -w /usr/share/wordlists/dirb/common.txt -x p
 We also enumerate port 9090 and find a flag on the front page ```FLAG {There is no Zeus, in your face!}```
 
 We also find another flag in the passwords folder /password/FLAG.txt. ```FLAG{Yeah d- just don't do it.}```
+
+We have morty's credentials ```morty:winter```
+
+
