@@ -35,3 +35,4 @@ Get-ChildItem -Path C:\ -Include ConsoleHost_history*.txt -File -Recurse -ErrorA
 ```
 Get-ADComputer -Filter * -Properties ms-Mcs-AdmPwd
 ```
+Domain passwords location: ```C:\Windows\NTDS\```
